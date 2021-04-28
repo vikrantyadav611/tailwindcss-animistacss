@@ -17,7 +17,7 @@ yarn add tailwindcss-animistacss
 ## Usage
 
 ```js
-import tailwindCSSAnimista from "tailwindcss-animistacss"
+const tailwindCSSAnimista =require("tailwindcss-animistacss")
 
 plugins: [
   // Other plugins
@@ -45,7 +45,7 @@ You can find all available class names at [Tail-Animista](https://tail-animista.
 <p style="color:red;font-weight:bold;"> Defining the classes is recommended to avoid to bloat your css with unused classes and keyframes.</p>
 
 ```js
-import tailwindCSSAnimista from "tailwindcss-animistacss"
+const tailwindCSSAnimista =require("tailwindcss-animistacss")
 
 plugins: [
   // Other plugins
@@ -94,7 +94,7 @@ Generating different class variants is super easy, just add the desired variant 
 ```js
 plugins: [
   // Other plugins
-  require('tailwindcss-animatecss')({
+  require('tailwindcss-animistacss')({
         classes: [],
         settings: {},
         variants: ['responsive', 'hover', 'reduced-motion'],
