@@ -1,0 +1,20 @@
+{
+  "name": "tailwindcss-animistacss",
+  "version": "1.0.0",
+  "description": "Add Animista CSS as Tailwind CSS plugin to your project.",
+  "main": "index.js",
+  "keywords": [
+    "animista",
+    "animistacss",
+    "animista.css",
+    "tailwind",
+    "tailwindcss",
+    "css"
+  ],
+  "author": "vikrant yadav",
+  "license": "MIT",
+  "dependencies": {
+    "@americanexpress/css-to-js": "^1.0.1",
+    "css-tree": "^1.1.3"
+  }
+}
