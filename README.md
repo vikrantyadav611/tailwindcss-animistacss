@@ -97,7 +97,7 @@ plugins: [
   require('tailwindcss-animistacss')({
         classes: [],
         settings: {},
-        variants: ['responsive', 'hover', 'reduced-motion'],
+        variants: ['responsive', 'hover', 'focus'],
       }),
 ]
 ```
