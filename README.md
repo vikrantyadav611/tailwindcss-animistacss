@@ -40,7 +40,7 @@ Pass a list of classes that you want to use to `classes` option
 Setting **isInfinite** to true removes the IterationCounts value from generated animation css property as this library has given more priority to `infinite` over `iteration-count`. upon falsy, value for iterationCounts will be used.
 
 
-You can find all available class names at [Tail-Animista](tail-animista.vercel.app/)
+You can find all available class names at [Tail-Animista](https://tail-animista.vercel.app/)
 
 <p style="color:red;font-weight:bold;"> Defining the classes is recommended to avoid to bloat your css with unused classes and keyframes.</p>
 
