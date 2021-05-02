@@ -42,7 +42,7 @@ Setting **isInfinite** to true removes the IterationCounts value from generated 
 
 You can find all available class names at [Tail-Animista](https://tail-animista.vercel.app/)
 
-<p style="color:red;font-weight:bold;"> Defining the classes is recommended to avoid to bloat your css with unused classes and keyframes.</p>
+**Defining the classes is recommended to avoid to bloat your css with unused classes and keyframes.**
 
 ```js
 const tailwindCSSAnimista =require("tailwindcss-animistacss")
@@ -71,10 +71,10 @@ module.exports = {
 `* duration: number (ms)`
 
 
-`* delay: number (ms)`
+`* delay: number (ms) //default: 0ms`
 
 
-`* iterationCounts: number`
+`* iterationCounts: number //default: 1`
 
 
 `* isInfinite: boolean`
@@ -83,7 +83,7 @@ module.exports = {
 `* direction: string`
 
 
-`* fillMode: string`
+`* fillMode: string //default: both`
 
 
 `* timingFunction: string`
