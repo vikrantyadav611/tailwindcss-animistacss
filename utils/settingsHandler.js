@@ -16,7 +16,7 @@ module.exports= (
 
         let animation_name=anim_prop.split(" ")[0]
 
-        let animation_duration = currentSetting.includes('duration')? `${values['duration']}` : anim_prop.split(" ")[1].split("s")[0];
+        let animation_duration = currentSetting.includes('duration')? `${values['duration']}` : Number(anim_prop.split(" ")[1].split("s")[0])*1000;
 
         let animation_delay = currentSetting.includes('delay') ?  `${values['delay']}`: '0';
         let animation_fill_mode = currentSetting.includes('fillMode') ? `${values['fillMode']}` : anim_prop.match(
