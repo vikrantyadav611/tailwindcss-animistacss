@@ -5,7 +5,7 @@ const mixin = require("./utils/index")
 module.exports = ({
   classes = [],
   settings = {},
-  variants=['responsive']
+  variants = ['responsive']
 }) => {
 
   if (!settings) {
@@ -16,8 +16,8 @@ module.exports = ({
     classes = []
   }
 
-  if(!variants){
-    variants=[]
+  if (!variants) {
+    variants = []
   }
 
   return ({ addUtilities }) => {
@@ -26,15 +26,15 @@ module.exports = ({
 
     if (!classes.length) {
       animationsAndKeyframes = mixin(defaults, settings)
-    }else{
+    } else {
       animationsAndKeyframes = mixin(classes, settings)
     }
 
     const animistaAnimationsUtilities = animationsAndKeyframes
       .animations
       .map((item) => {
-        const key=Object.keys(item)[0];
-        const value=Object.values(item)[0]
+        const key = Object.keys(item)[0];
+        const value = Object.values(item)[0]
 
         return {
           [`.${key}`]: {
@@ -46,15 +46,15 @@ module.exports = ({
     const animistaKeyframesUtilities = animationsAndKeyframes
       .keyframes
       .map((item) => {
-        const key=Object.keys(item)[0].split(" ")[1];
-        const value=Object.values(item)[0]
+        const key = Object.keys(item)[0].split(" ")[1];
+        const value = Object.values(item)[0]
 
         return {
-          [`@keyframes ${key}`]:value
+          [`@keyframes ${key}`]: value
         }
       })
 
-    addUtilities(animistaAnimationsUtilities,{
+    addUtilities(animistaAnimationsUtilities, {
       variants
     })
 

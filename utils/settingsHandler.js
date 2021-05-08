@@ -5,13 +5,14 @@ module.exports= (
     node,
     settings
 ) =>{
-    return Object.entries(settings).map((([_,values]) => {
+    return Object.entries(settings).map((([key,values]) => {
+        if (key!==AST__selector__name) {
+          return;
+        }
 
         const anim_prop=node.style.animation;  // bounceIn 2s linear infinite both;
 
         const currentSetting=Object.keys(values);
-
-        if(!currentSetting) throw Error("please pass a valid animation setting!")
 
         let animation_name=anim_prop.split(" ")[0]
 
